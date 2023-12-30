@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunes Sports</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Nunes Sports</span>
+            <button onclick="openModal()" id="new">Cadastrar produto</i></button>
+        </div>
+
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="product-name">Nome</label>
+                    <input id="product-name" type="text" required />
+
+                    <label for="product-code">Código</label>
+                    <input id="product-code" type="text" required />
+
+                    <label for="product-description">Descrição</label>
+                    <input id="product-description" type="text" required />
+
+                    <label for="product-price">Preço</label>
+                    <input id="product-price" type="text" required />
+
+                    <button id="button-save">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="/frontend/js/requests.js"></script>
+    <script src="/frontend/js/functions.js"></script>
+</body>
+
+</html>
